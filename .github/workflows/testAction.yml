@@ -1,0 +1,12 @@
+name: testAction
+
+on: [push]
+env:
+  APPLICATION_NAME: testAction
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Hello World Action
+      uses: ndavarpanah/GitHubActionCh5Challenge@main
